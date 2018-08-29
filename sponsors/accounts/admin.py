@@ -6,3 +6,5 @@ from . import models
 
 
 admin.site.register(models.Sponsor)
+
+
