@@ -1,4 +1,6 @@
+
 from django.db import models
+
 
 # Create your models here.
 
@@ -18,5 +20,6 @@ class Sponsor(models.Model):
     type_user = models.CharField(max_length=50, default='sponsor')
 
     def __str__(self):
+
         return self.full_name
 

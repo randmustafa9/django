@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>تسجيل كفيل :</title>
+</head>
+<body  >
+{% block body %}
+<center><form method="POST" style="width: 40%; "  >
+{% csrf_token %}
+    <br>
+    <h4 align="right">username:</h4>
+<input type="text" name="username" placeholder="اسم المستخدم" class="form-control">
+    <br>
+     <h4 align="right">password:</h4>
+<input type="password" name="password" placeholder="كلمة المرور" class="form-control">
+    <h4 align="right">fulName:</h4>
+<input type="text" name="fulName" placeholder="الأسم الكامل" class="form-control">
+    <br>
+    <br>
+    <h4 align="right">birthdate:</h4>
+<input type="date" name="birthdate" placeholder="المواليد" class="form-control">
+    <br>
+    <h4 align="right">governorate:</h4>
+<input type="text" name="governorate" placeholder="المحافظة" class="form-control">
+    <br>
+    <h4 align="right">jobAddress:</h4>
+<input type="text" name="jobAddress" placeholder="عنوان العمل" class="form-control">
+    <br>
+    <h4 align="right">phone:</h4>
+<input type="number" name="phone" placeholder="رقم الهاتف" class="form-control">
+    <br>
+     <h4 align="right">img:</h4>
+<input type="file" name="img" placeholder="صورة" class="form-control">
+    <br>
+   <h4 align="right">monthlysalary:</h4>
+<input type="number" name="monthlysalary" placeholder="الراتب الشهري" class="form-control">
+    <br>
+<input type="submit"  value="تسجيل" class="btn btn-dark" align="left">
+</form></center>
+{% endblock %}
+</body>
+</html>
