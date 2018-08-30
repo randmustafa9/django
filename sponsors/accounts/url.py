@@ -13,4 +13,7 @@ urlpatterns = [
 
 
 ]
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
