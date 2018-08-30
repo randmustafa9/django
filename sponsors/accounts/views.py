@@ -27,8 +27,8 @@ def signup_sponsor(request):
         form2.save
         user = authenticate(request, username=username, password=password)
         login(request,user)
-        return render(request,"bise.html")
-    return render(request,signup_sponsor.html)
+        return render(request,"sponsor_reg.html")
+    return render(request, "sponsor_reg.html")
 
 
  
