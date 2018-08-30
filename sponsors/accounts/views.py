@@ -29,6 +29,21 @@ def signup_sponsor(request):
         login(request,user)
         return render(request,"bise.html")
     return render(request,signup_sponsor.html)
+    def logins(request):
+        if request.method=="POST":
+            username=request.POST.get('username')
+            password=request.POST.get('password')
+            user=authenticate(request,username=username, password=password)
+            if user is not None:
+                login(request,user)
+                return render(request,'bise.html',{'user':username})
+            return render(request,'login.html')
+
+    def logouts(request):
+    if request.POST.get('logout'):
+        logout(request)
+            
+
 
 
  
