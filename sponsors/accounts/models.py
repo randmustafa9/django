@@ -23,3 +23,19 @@ class Sponsor(models.Model):
 
         return self.full_name
 
+class Student(models.Model):
+    full_name=models.CharField(max_length=200,blank=False)
+    age=models.IntegerField(blank=True)
+    birth_date=models.DateField(null=True)
+    phone_number=models.IntegerField(blank=True)
+    city=models.CharField(max_length=200,blank=False)
+    educational_level=models.CharField(max_length=200,blank=False)
+    img = models.FileField(upload_to='docs/', blank=False)
+    approved=models.BooleanField(default=False)
+    up_date = models.DateField(auto_now_add=True)
+    type_user = models.CharField(max_length=50, default='student')
+
+    def __str__(self):
+        return self.full_name
+
+
