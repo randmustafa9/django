@@ -27,6 +27,7 @@ def signup_sponsor(request):
         form2.save
         user = authenticate(request, username=username, password=password)
         login(request,user)
+<<<<<<< HEAD
         return render(request,"bise.html")
     return render(request,signup_sponsor.html)
     def logins(request):
@@ -44,6 +45,10 @@ def signup_sponsor(request):
         logout(request)
             
 
+=======
+        return render(request,"sponsor_reg.html")
+    return render(request, "sponsor_reg.html")
+>>>>>>> c92bc89c6afada6bf9d2eb4b0e0c3fdb0351915e
 
 
  
