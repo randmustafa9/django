@@ -9,7 +9,7 @@ urlpatterns = [
 
     path("reqister/", views.signup_sponsor, name="reqister"),
 
-
-
-
 ]
+
+
+
