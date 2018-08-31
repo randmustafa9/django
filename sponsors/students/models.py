@@ -13,6 +13,7 @@ class Requests(models.Model):
     sponsor = models.CharField(max_length=100, blank=False)
 
 
+
     def __str__(self):
 
         return self.title
